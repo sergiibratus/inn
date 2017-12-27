@@ -29,6 +29,7 @@
                     10 * str[4] + 3 * str[5] + 5 * str[6] +  9 * str[7] + 4 * str[8] + 
                     6 * str[9] +  8 * str[10]) % 11) % 10);
                 str = str + twelve;
+                str.replace(/(\d{4})/g, '$1 ').replace(/(^\s+|\s+$)/,'')
                 return str; 
             }
 
