@@ -1,1 +1,1 @@
-# This is the simples INN generator
+# This is the simplest INN generator
