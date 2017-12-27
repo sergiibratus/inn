@@ -17,9 +17,9 @@
 
         <script>
             function genImpl() {
-                var str = String((Math.random() * 8) + 1);
+                var str = (Math.floor(Math.random() * 8) + 1).ToString();
                 for (var i = 0; i < 9; i++) {
-					str = str + String(Math.random() * 9);
+					str = str + (Math.floor(Math.random() * 9) + 1).ToString();
 				}
 
                 var eleven = String((( 7 * str[0] + 2 * str[1] + 4 * str[2] + 10 * str[3] + 
