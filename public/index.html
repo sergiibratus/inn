@@ -11,16 +11,17 @@
     <body onload="generate()">
 
         <div class="container">
-            <h2><p id="demo"></p></h2>
+            <h2><p id="innLabel"></p></h2>
             <button type="button" class="btn btn-primary btn-lg btn-block" onclick="generate()">Generate</button>
         </div>
 
         <script>
             function genImpl() {
                 var str = (Math.floor(Math.random() * 8) + 1).ToString();
-                for (var i = 0; i < 9; i++) {
-					str = str + (Math.floor(Math.random() * 9) + 1).ToString();
-				}
+                for (var i = 0; i < 1; i++) {
+                    str = str + (Math.floor(Math.random() * 9) + 1).ToString();
+                }
+                return str;
 
                 var eleven = String((( 7 * str[0] + 2 * str[1] + 4 * str[2] + 10 * str[3] + 
                     3 * str[4] + 5 * str[5] + 9 * str[6] + 4 * str[7] + 6 * str[8] + 8 * str[9]) % 11) % 10);
@@ -32,9 +33,9 @@
                 return str;
             }
 
-            function generate() {
-                document.getElementById("demo").innerHTML = genImpl();
-            }
+function generate() {
+    document.getElementById("innLabel").innerHTML = genImpl();
+}
         </script>
 
     </body>
